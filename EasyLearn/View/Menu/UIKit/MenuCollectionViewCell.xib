@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="KGColdCoffee.ttf">
+            <string>KGColdCoffee</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="menuCell" id="gTV-IL-0wX" customClass="MenuCollectionViewCell" customModule="EasyLearn" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pbn-Y9-FMU">
+                        <rect key="frame" x="20" y="20" width="360" height="280"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmI-KL-Bi1">
+                        <rect key="frame" x="20" y="350" width="360" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="W2H-QG-UkQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="KGColdCoffee" family="KG Cold Coffee" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.56862745098039214" green="0.36078431372549019" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mmI-KL-Bi1" secondAttribute="trailing" constant="20" id="NmI-t7-vhs"/>
+                <constraint firstItem="pbn-Y9-FMU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="XO4-H8-Ief"/>
+                <constraint firstAttribute="bottom" secondItem="pbn-Y9-FMU" secondAttribute="bottom" constant="100" id="hTk-kc-7DH"/>
+                <constraint firstAttribute="trailing" secondItem="pbn-Y9-FMU" secondAttribute="trailing" constant="20" id="jPg-u2-6HO"/>
+                <constraint firstItem="pbn-Y9-FMU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="lDO-yF-C23"/>
+                <constraint firstAttribute="bottom" secondItem="mmI-KL-Bi1" secondAttribute="bottom" constant="5" id="yXi-cQ-qWY"/>
+                <constraint firstItem="mmI-KL-Bi1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="ysD-Vf-eqO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="230" height="190"/>
+            <connections>
+                <outlet property="itemImageView" destination="pbn-Y9-FMU" id="vNo-eH-Yno"/>
+                <outlet property="itemTitle" destination="mmI-KL-Bi1" id="0RH-my-bEV"/>
+            </connections>
+            <point key="canvasLocation" x="-133.33333333333334" y="113.83928571428571"/>
+        </collectionViewCell>
+    </objects>
+</document>

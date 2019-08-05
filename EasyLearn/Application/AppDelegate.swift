@@ -16,7 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let menuViewController = MenuViewController(nibName: "MenuViewController", bundle: nil)
+        let navigationController = UINavigationController(rootViewController: menuViewController)
+        
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+        setupUI(application: application)
+
+        
         return true
     }
 
@@ -88,6 +96,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+
+}
+
+extension AppDelegate: Colorable {
+    func setupUI(application: UIApplication) {
+        application.statusBarView?.backgroundColor = setColor(color: .chestnut)
+        let navigationBarAppearance = UINavigationBar.appearance()
+        navigationBarAppearance.barTintColor = setColor(color: .chestnut)
+        navigationBarAppearance.tintColor = setColor(color: .fadedJade)
+        navigationBarAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        navigationBarAppearance.isTranslucent = false
+    }
+
 
 }
 

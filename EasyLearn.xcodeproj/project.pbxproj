@@ -11,6 +11,21 @@
 		3215E17C22EF58920025D232 /* EasyLearn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3215E17A22EF58920025D232 /* EasyLearn.xcdatamodeld */; };
 		3215E17E22EF58940025D232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3215E17D22EF58940025D232 /* Assets.xcassets */; };
 		3215E18122EF58940025D232 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3215E17F22EF58940025D232 /* LaunchScreen.storyboard */; };
+		3215E18E22EF5FA10025D232 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215E18C22EF5FA10025D232 /* MenuViewController.swift */; };
+		3215E18F22EF5FA10025D232 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3215E18D22EF5FA10025D232 /* MenuViewController.xib */; };
+		3215E19322EF6F8E0025D232 /* MenuViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215E19222EF6F8E0025D232 /* MenuViewController+Extension.swift */; };
+		3215E19622EF740E0025D232 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215E19522EF740E0025D232 /* MenuViewModel.swift */; };
+		3215E19822EF74420025D232 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215E19722EF74420025D232 /* MenuItem.swift */; };
+		3215E19A22EF7A270025D232 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215E19922EF7A270025D232 /* ItemViewModel.swift */; };
+		3215E19C22F0AA940025D232 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215E19B22F0AA940025D232 /* DummyData.swift */; };
+		3215E19F22F0AC620025D232 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215E19D22F0AC620025D232 /* MenuCollectionViewCell.swift */; };
+		3215E1A022F0AC620025D232 /* MenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3215E19E22F0AC620025D232 /* MenuCollectionViewCell.xib */; };
+		32212BED22F34192008684BA /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32212BEC22F34192008684BA /* DatabaseManager.swift */; };
+		32212BEF22F341CA008684BA /* DocumentsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32212BEE22F341CA008684BA /* DocumentsManager.swift */; };
+		32212BF522F44545008684BA /* KGFonts-TOU.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32212BF322F44545008684BA /* KGFonts-TOU.txt */; };
+		32212BF622F44545008684BA /* KGColdCoffee.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32212BF422F44545008684BA /* KGColdCoffee.ttf */; };
+		32212BF922F44FF1008684BA /* App+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32212BF822F44FF1008684BA /* App+Extension.swift */; };
+		32212BFB22F45091008684BA /* UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32212BFA22F45091008684BA /* UIConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +35,21 @@
 		3215E17D22EF58940025D232 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3215E18022EF58940025D232 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3215E18222EF58940025D232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3215E18C22EF5FA10025D232 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		3215E18D22EF5FA10025D232 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		3215E19222EF6F8E0025D232 /* MenuViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+Extension.swift"; sourceTree = "<group>"; };
+		3215E19522EF740E0025D232 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		3215E19722EF74420025D232 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		3215E19922EF7A270025D232 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		3215E19B22F0AA940025D232 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		3215E19D22F0AC620025D232 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		3215E19E22F0AC620025D232 /* MenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCollectionViewCell.xib; sourceTree = "<group>"; };
+		32212BEC22F34192008684BA /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		32212BEE22F341CA008684BA /* DocumentsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsManager.swift; sourceTree = "<group>"; };
+		32212BF322F44545008684BA /* KGFonts-TOU.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "KGFonts-TOU.txt"; sourceTree = "<group>"; };
+		32212BF422F44545008684BA /* KGColdCoffee.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KGColdCoffee.ttf; sourceTree = "<group>"; };
+		32212BF822F44FF1008684BA /* App+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Extension.swift"; sourceTree = "<group>"; };
+		32212BFA22F45091008684BA /* UIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,14 +82,16 @@
 		3215E17222EF58920025D232 /* EasyLearn */ = {
 			isa = PBXGroup;
 			children = (
-				3215E17322EF58920025D232 /* AppDelegate.swift */,
-				3215E18A22EF5AC40025D232 /* ViewModel */,
-				3215E18922EF5AC00025D232 /* View */,
-				3215E18822EF5AB90025D232 /* Model */,
+				32212BF722F44EF6008684BA /* Application */,
 				3215E17D22EF58940025D232 /* Assets.xcassets */,
-				3215E17F22EF58940025D232 /* LaunchScreen.storyboard */,
-				3215E18222EF58940025D232 /* Info.plist */,
+				3215E18B22EF5F6D0025D232 /* Database */,
 				3215E17A22EF58920025D232 /* EasyLearn.xcdatamodeld */,
+				32212BF122F444D2008684BA /* Fonts */,
+				3215E18222EF58940025D232 /* Info.plist */,
+				3215E17F22EF58940025D232 /* LaunchScreen.storyboard */,
+				3215E18822EF5AB90025D232 /* Model */,
+				3215E18922EF5AC00025D232 /* View */,
+				3215E18A22EF5AC40025D232 /* ViewModel */,
 			);
 			path = EasyLearn;
 			sourceTree = "<group>";
@@ -67,6 +99,7 @@
 		3215E18822EF5AB90025D232 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3215E19722EF74420025D232 /* MenuItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -74,6 +107,7 @@
 		3215E18922EF5AC00025D232 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3215E19022EF5FA80025D232 /* Menu */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -81,8 +115,75 @@
 		3215E18A22EF5AC40025D232 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3215E19522EF740E0025D232 /* MenuViewModel.swift */,
+				3215E19922EF7A270025D232 /* ItemViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3215E18B22EF5F6D0025D232 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				3215E19B22F0AA940025D232 /* DummyData.swift */,
+				32212BEC22F34192008684BA /* DatabaseManager.swift */,
+				32212BEE22F341CA008684BA /* DocumentsManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		3215E19022EF5FA80025D232 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				3215E19422EF70EE0025D232 /* UIKit */,
+				3215E19122EF6F760025D232 /* Extension */,
+				3215E18C22EF5FA10025D232 /* MenuViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		3215E19122EF6F760025D232 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3215E19222EF6F8E0025D232 /* MenuViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3215E19422EF70EE0025D232 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				3215E18D22EF5FA10025D232 /* MenuViewController.xib */,
+				3215E19D22F0AC620025D232 /* MenuCollectionViewCell.swift */,
+				3215E19E22F0AC620025D232 /* MenuCollectionViewCell.xib */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		32212BF122F444D2008684BA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				32212BF222F44545008684BA /* kimberly-geswein_kg-cold-coffee */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		32212BF222F44545008684BA /* kimberly-geswein_kg-cold-coffee */ = {
+			isa = PBXGroup;
+			children = (
+				32212BF322F44545008684BA /* KGFonts-TOU.txt */,
+				32212BF422F44545008684BA /* KGColdCoffee.ttf */,
+			);
+			path = "kimberly-geswein_kg-cold-coffee";
+			sourceTree = "<group>";
+		};
+		32212BF722F44EF6008684BA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3215E17322EF58920025D232 /* AppDelegate.swift */,
+				32212BF822F44FF1008684BA /* App+Extension.swift */,
+				32212BFA22F45091008684BA /* UIConfiguration.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +245,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3215E18122EF58940025D232 /* LaunchScreen.storyboard in Resources */,
+				3215E18F22EF5FA10025D232 /* MenuViewController.xib in Resources */,
+				32212BF622F44545008684BA /* KGColdCoffee.ttf in Resources */,
 				3215E17E22EF58940025D232 /* Assets.xcassets in Resources */,
+				32212BF522F44545008684BA /* KGFonts-TOU.txt in Resources */,
+				3215E1A022F0AC620025D232 /* MenuCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,8 +260,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3215E19C22F0AA940025D232 /* DummyData.swift in Sources */,
 				3215E17422EF58920025D232 /* AppDelegate.swift in Sources */,
+				32212BED22F34192008684BA /* DatabaseManager.swift in Sources */,
+				32212BF922F44FF1008684BA /* App+Extension.swift in Sources */,
+				3215E19F22F0AC620025D232 /* MenuCollectionViewCell.swift in Sources */,
+				3215E18E22EF5FA10025D232 /* MenuViewController.swift in Sources */,
 				3215E17C22EF58920025D232 /* EasyLearn.xcdatamodeld in Sources */,
+				32212BEF22F341CA008684BA /* DocumentsManager.swift in Sources */,
+				3215E19A22EF7A270025D232 /* ItemViewModel.swift in Sources */,
+				3215E19822EF74420025D232 /* MenuItem.swift in Sources */,
+				3215E19622EF740E0025D232 /* MenuViewModel.swift in Sources */,
+				32212BFB22F45091008684BA /* UIConfiguration.swift in Sources */,
+				3215E19322EF6F8E0025D232 /* MenuViewController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
