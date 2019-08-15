@@ -21,6 +21,7 @@ class MenuViewController: UIViewController {
         viewModel.fetchItems()
         setupCollectionView()
         setupCollectionViewUI()
+        
     }
 
 
