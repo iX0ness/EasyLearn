@@ -25,7 +25,18 @@
 		32212BF622F44545008684BA /* KGColdCoffee.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32212BF422F44545008684BA /* KGColdCoffee.ttf */; };
 		32212BF922F44FF1008684BA /* App+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32212BF822F44FF1008684BA /* App+Extension.swift */; };
 		32212BFB22F45091008684BA /* UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32212BFA22F45091008684BA /* UIConfiguration.swift */; };
+
 		32E3FBA92301F03100C73173 /* DocumentsDirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3FBA82301F03100C73173 /* DocumentsDirectoryManager.swift */; };
+		327C8A7C23056CE100E45940 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A7B23056CE100E45940 /* CoreDataStack.swift */; };
+		327C8A89230571A400E45940 /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A85230571A400E45940 /* Word+CoreDataClass.swift */; };
+		327C8A8A230571A400E45940 /* Word+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A86230571A400E45940 /* Word+CoreDataProperties.swift */; };
+		327C8A8B230571A400E45940 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A87230571A400E45940 /* Category+CoreDataClass.swift */; };
+		327C8A8C230571A400E45940 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A88230571A400E45940 /* Category+CoreDataProperties.swift */; };
+		327C8A912305844800E45940 /* LibraryTableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A8F2305844800E45940 /* LibraryTableViewViewController.swift */; };
+		327C8A922305844800E45940 /* LibraryTableViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327C8A902305844800E45940 /* LibraryTableViewViewController.xib */; };
+		327C8A972305851100E45940 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A952305851100E45940 /* CategoryTableViewCell.swift */; };
+		327C8A982305851100E45940 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327C8A962305851100E45940 /* CategoryTableViewCell.xib */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +60,19 @@
 		32212BF422F44545008684BA /* KGColdCoffee.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KGColdCoffee.ttf; sourceTree = "<group>"; };
 		32212BF822F44FF1008684BA /* App+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Extension.swift"; sourceTree = "<group>"; };
 		32212BFA22F45091008684BA /* UIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfiguration.swift; sourceTree = "<group>"; };
+
 		32E3FBA82301F03100C73173 /* DocumentsDirectoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsDirectoryManager.swift; sourceTree = "<group>"; };
+
+		327C8A7B23056CE100E45940 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		327C8A85230571A400E45940 /* Word+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataClass.swift"; sourceTree = "<group>"; };
+		327C8A86230571A400E45940 /* Word+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		327C8A87230571A400E45940 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		327C8A88230571A400E45940 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		327C8A8F2305844800E45940 /* LibraryTableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTableViewViewController.swift; sourceTree = "<group>"; };
+		327C8A902305844800E45940 /* LibraryTableViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryTableViewViewController.xib; sourceTree = "<group>"; };
+		327C8A952305851100E45940 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		327C8A962305851100E45940 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +130,7 @@
 		3215E18922EF5AC00025D232 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				327C8A932305844C00E45940 /* WordsLibrary */,
 				3215E19022EF5FA80025D232 /* Menu */,
 			);
 			path = View;
@@ -124,6 +148,7 @@
 		3215E18B22EF5F6D0025D232 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				327C8A8D230571B400E45940 /* CoreData */,
 				3215E19B22F0AA940025D232 /* DummyData.swift */,
 				32212BEC22F34192008684BA /* DatabaseManager.swift */,
 				32E3FBA82301F03100C73173 /* DocumentsDirectoryManager.swift */,
@@ -186,6 +211,45 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		327C8A8D230571B400E45940 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				327C8A7B23056CE100E45940 /* CoreDataStack.swift */,
+				327C8A8E230571C500E45940 /* ObjectsSubclasses */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		327C8A8E230571C500E45940 /* ObjectsSubclasses */ = {
+			isa = PBXGroup;
+			children = (
+				327C8A85230571A400E45940 /* Word+CoreDataClass.swift */,
+				327C8A86230571A400E45940 /* Word+CoreDataProperties.swift */,
+				327C8A87230571A400E45940 /* Category+CoreDataClass.swift */,
+				327C8A88230571A400E45940 /* Category+CoreDataProperties.swift */,
+			);
+			path = ObjectsSubclasses;
+			sourceTree = "<group>";
+		};
+		327C8A932305844C00E45940 /* WordsLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				327C8A94230584D100E45940 /* UIKit */,
+				327C8A8F2305844800E45940 /* LibraryTableViewViewController.swift */,
+			);
+			path = WordsLibrary;
+			sourceTree = "<group>";
+		};
+		327C8A94230584D100E45940 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				327C8A902305844800E45940 /* LibraryTableViewViewController.xib */,
+				327C8A952305851100E45940 /* CategoryTableViewCell.swift */,
+				327C8A962305851100E45940 /* CategoryTableViewCell.xib */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,6 +310,8 @@
 			files = (
 				3215E18122EF58940025D232 /* LaunchScreen.storyboard in Resources */,
 				3215E18F22EF5FA10025D232 /* MenuViewController.xib in Resources */,
+				327C8A922305844800E45940 /* LibraryTableViewViewController.xib in Resources */,
+				327C8A982305851100E45940 /* CategoryTableViewCell.xib in Resources */,
 				32212BF622F44545008684BA /* KGColdCoffee.ttf in Resources */,
 				3215E17E22EF58940025D232 /* Assets.xcassets in Resources */,
 				32212BF522F44545008684BA /* KGFonts-TOU.txt in Resources */,
@@ -261,18 +327,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				3215E19C22F0AA940025D232 /* DummyData.swift in Sources */,
+
 				32E3FBA92301F03100C73173 /* DocumentsDirectoryManager.swift in Sources */,
+
+				327C8A8C230571A400E45940 /* Category+CoreDataProperties.swift in Sources */,
+
 				3215E17422EF58920025D232 /* AppDelegate.swift in Sources */,
+				327C8A8B230571A400E45940 /* Category+CoreDataClass.swift in Sources */,
 				32212BED22F34192008684BA /* DatabaseManager.swift in Sources */,
 				32212BF922F44FF1008684BA /* App+Extension.swift in Sources */,
 				3215E19F22F0AC620025D232 /* MenuCollectionViewCell.swift in Sources */,
 				3215E18E22EF5FA10025D232 /* MenuViewController.swift in Sources */,
 				3215E17C22EF58920025D232 /* EasyLearn.xcdatamodeld in Sources */,
+
+
+				327C8A7C23056CE100E45940 /* CoreDataStack.swift in Sources */,
+				32212BEF22F341CA008684BA /* DocumentsManager.swift in Sources */,
+
 				3215E19A22EF7A270025D232 /* ItemViewModel.swift in Sources */,
 				3215E19822EF74420025D232 /* MenuItem.swift in Sources */,
+				327C8A912305844800E45940 /* LibraryTableViewViewController.swift in Sources */,
+				327C8A89230571A400E45940 /* Word+CoreDataClass.swift in Sources */,
+				327C8A972305851100E45940 /* CategoryTableViewCell.swift in Sources */,
 				3215E19622EF740E0025D232 /* MenuViewModel.swift in Sources */,
 				32212BFB22F45091008684BA /* UIConfiguration.swift in Sources */,
 				3215E19322EF6F8E0025D232 /* MenuViewController+Extension.swift in Sources */,
+				327C8A8A230571A400E45940 /* Word+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,5 +9,12 @@
 import Foundation
 
 class DatabaseManager: NSObject {
+
+    var coreDataStack = CoreDataStack(modelName: "EasyLearn")
+
+    static let shared = DatabaseManager()
+
+    private override init() {}
+
     
 }
