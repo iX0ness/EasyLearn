@@ -14,10 +14,10 @@ class DummyData {
     static let shared = DummyData()
 
     func generateMenuItems() -> [MenuItem] {
-        return [MenuItem(name: "Learn", imagePath: "reading"),
-                MenuItem(name: "Exam", imagePath: "exam"),
-                MenuItem(name: "Words library", imagePath: "library"),
-                MenuItem(name: "Contact", imagePath: "contact")
+        return [MenuItem(name: "Learn", imagePath: "Reading"),
+                MenuItem(name: "Exam", imagePath: "Exam"),
+                MenuItem(name: "Words library", imagePath: "Library"),
+                MenuItem(name: "Contact", imagePath: "Contact")
                ]
     }
 }
