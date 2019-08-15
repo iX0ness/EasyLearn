@@ -16,5 +16,5 @@ class DatabaseManager: NSObject {
 
     private override init() {}
 
-
+    
 }
