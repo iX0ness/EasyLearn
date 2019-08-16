@@ -18,11 +18,11 @@ class MenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.fetchItems()
+        viewModel.fetchMenuItems()
         setupCollectionView()
         setupCollectionViewUI()
 
-        let image = DocumentsManager.shared.getImage(imageName: ImageName.contact)
+        let image = DocumentsManager.shared.getImage(imageName: ItemName.contact)
         print(image?.size)
 
         

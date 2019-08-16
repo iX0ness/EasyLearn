@@ -21,12 +21,26 @@ struct MenuViewModel {
 
     func getItem(at indexPath: IndexPath) -> ItemViewModel {
         let item = menuItems[indexPath.row]
-        return ItemViewModel(name: item.name, image: UIImage(named: "\(item.imagePath)")!)
+        let itemViewModel = ItemViewModel()
+        itemViewModel.configure(with: item)
+        return itemViewModel
     }
 
-    mutating func fetchItems() {
-        menuItems = DummyData.shared.generateMenuItems()
+//    mutating func fetchItems() {
+//
+//        menuItems = DummyData.shared.getMenuItems()
+//
+//    }
 
+    mutating func fetchMenuItems() {
+        var items: [MenuItem] = []
+        ItemName.allCases.forEach { (item) in
+            let menuItem = MenuItem(name: item.rawValue,
+                                    imagePath:DocumentsManager.shared.getItemImagePath(itemName: item)!
+            )
+            items.append(menuItem)
+        }
+        self.menuItems = items
     }
 
 }

@@ -13,6 +13,21 @@ class DummyData {
 
     static let shared = DummyData()
 
+
+
+    func getMenuItems() -> [MenuItem] {
+        var items: [MenuItem] = []
+        ItemName.allCases.forEach { (item) in
+            let menuItem = MenuItem(name: item.rawValue,
+                                imagePath:DocumentsManager.shared.getItemImagePath(itemName: item)!
+            )
+            items.append(menuItem)
+        }
+
+        return items
+
+    }
+
     func generateMenuItems() -> [MenuItem] {
         return [MenuItem(name: "Learn", imagePath: "Reading"),
                 MenuItem(name: "Exam", imagePath: "Exam"),

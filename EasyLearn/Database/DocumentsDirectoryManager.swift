@@ -9,16 +9,21 @@
 import Foundation
 import UIKit
 
-enum ImageName: String{
-    case contact = "contact.png"
-    case exam = "exam.png"
-    case library = "library.png"
-    case reading = "reading.png"
+enum ItemName: String {
+    case contact = "Contact"
+    case exam = "Exam"
+    case library = "Library"
+    case reading = "Reading"
+
+    static let allCases = [contact, exam, library, reading]
 }
+
+
+//extension ItemName: CaseIterable{}
 
 protocol GetPath {
     func getDocumentsURL() -> URL
-    func getFullPath(to image: ImageName) -> URL
+    func getFullPath(to image: ItemName) -> URL
 }
 
 extension GetPath {
@@ -28,18 +33,18 @@ extension GetPath {
         return documentsURL
     }
 
-    func getFullPath(to image: ImageName) -> URL {
+    func getFullPath(to image: ItemName) -> URL {
         return getDocumentsURL().appendingPathComponent(image.rawValue)
     }
 }
 
 protocol ImageManipulator: GetPath {
-    func saveImage(imageName: ImageName) -> Void
-    func getImage(imageName: ImageName) -> UIImage?
+    func saveImage(imageName: ItemName) -> Void
+    func getImage(imageName: ItemName) -> UIImage?
 }
 
 extension ImageManipulator {
-    func saveImage(imageName: ImageName) {
+    func saveImage(imageName: ItemName) {
         do {
             let fileURL = getFullPath(to: imageName)
             guard !FileManager.default.fileExists(atPath: fileURL.absoluteString) else {
@@ -55,7 +60,7 @@ extension ImageManipulator {
         }
     }
 
-    func getImage(imageName: ImageName) -> UIImage? {
+    func getImage(imageName: ItemName) -> UIImage? {
         do {
             let fileURL = getFullPath(to: imageName)
             guard FileManager.default.fileExists(atPath: fileURL.path) else {
@@ -68,6 +73,38 @@ extension ImageManipulator {
             return nil
         }
     }
+
+    func getImage(with path: String) -> UIImage? {
+        do {
+            let fileURL = URL(fileURLWithPath: path)
+            guard FileManager.default.fileExists(atPath: fileURL.path) else {
+                return UIImage(named: "info.png")!
+            }
+            let file = try Data(contentsOf: fileURL)
+            return UIImage(data: file)
+        } catch {
+            print(error.localizedDescription)
+            return nil
+        }
+    }
+
+    func getItemImagePath(itemName: ItemName) -> String? {
+        let fileURL = getFullPath(to: itemName)
+        if FileManager.default.fileExists(atPath: fileURL.path) {
+            return fileURL.path
+        } else {
+            return nil
+        }
+    }
+
+    func storeItemsImages() {
+        let images = [ItemName.contact, ItemName.exam, ItemName.library, ItemName.reading]
+        images.forEach { imageName in
+            saveImage(imageName: imageName)
+        }
+    }
+
+
 }
 
 class DocumentsManager: ImageManipulator {

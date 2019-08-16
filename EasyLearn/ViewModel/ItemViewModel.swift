@@ -10,11 +10,13 @@ import Foundation
 import UIKit
 
 class ItemViewModel {
-    var name: String
-    var image: UIImage
+    var name: String?
+    var image: UIImage?
 
-    init(name: String, image: UIImage) {
-        self.name = name
-        self.image = image
+    init() {}
+
+    func configure(with item: MenuItem) {
+        self.name = item.name
+        self.image = DocumentsManager.shared.getImage(with: item.imagePath)
     }
 }

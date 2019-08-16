@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         setupUI(application: application)
         
-        DocumentsManager.shared.saveImage(imageName: .contact)
+        DocumentsManager.shared.storeItemsImages()
         
         return true
     }
