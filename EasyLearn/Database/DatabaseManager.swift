@@ -16,5 +16,11 @@ class DatabaseManager: NSObject {
 
     private override init() {}
 
+    func storeWords() {
+
+
+
+    }
+
     
 }
