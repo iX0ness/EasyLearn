@@ -21,12 +21,6 @@ class MenuViewController: UIViewController {
         viewModel.fetchMenuItems()
         setupCollectionView()
         setupCollectionViewUI()
-
-        let image = DocumentsManager.shared.getImage(imageName: ItemName.contact)
-        print(image?.size)
-
-        
-
     }
 
 

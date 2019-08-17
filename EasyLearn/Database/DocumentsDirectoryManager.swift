@@ -10,12 +10,12 @@ import Foundation
 import UIKit
 
 enum ItemName: String {
-    case contact = "Contact"
+    case learning = "Learning"
     case exam = "Exam"
     case library = "Library"
-    case reading = "Reading"
+    case contact = "Contact"
 
-    static let allCases = [contact, exam, library, reading]
+    static let allCases = [learning, exam, library, contact]
 }
 
 protocol GetPath {
@@ -95,9 +95,8 @@ extension ImageManipulator {
     }
 
     func storeItemsImages() {
-        let images = [ItemName.contact, ItemName.exam, ItemName.library, ItemName.reading]
-        images.forEach { imageName in
-            saveImage(imageName: imageName)
+        ItemName.allCases.forEach { (itemName) in
+            saveImage(imageName: itemName)
         }
     }
 
