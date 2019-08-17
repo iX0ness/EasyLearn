@@ -17,7 +17,6 @@
 		3215E19622EF740E0025D232 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215E19522EF740E0025D232 /* MenuViewModel.swift */; };
 		3215E19822EF74420025D232 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215E19722EF74420025D232 /* MenuItem.swift */; };
 		3215E19A22EF7A270025D232 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215E19922EF7A270025D232 /* ItemViewModel.swift */; };
-		3215E19C22F0AA940025D232 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215E19B22F0AA940025D232 /* DummyData.swift */; };
 		3215E19F22F0AC620025D232 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215E19D22F0AC620025D232 /* MenuCollectionViewCell.swift */; };
 		3215E1A022F0AC620025D232 /* MenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3215E19E22F0AC620025D232 /* MenuCollectionViewCell.xib */; };
 		32212BED22F34192008684BA /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32212BEC22F34192008684BA /* DatabaseManager.swift */; };
@@ -51,7 +50,6 @@
 		3215E19522EF740E0025D232 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		3215E19722EF74420025D232 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		3215E19922EF7A270025D232 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
-		3215E19B22F0AA940025D232 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		3215E19D22F0AC620025D232 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		3215E19E22F0AC620025D232 /* MenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCollectionViewCell.xib; sourceTree = "<group>"; };
 		32212BEC22F34192008684BA /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				327C8A8D230571B400E45940 /* CoreData */,
-				3215E19B22F0AA940025D232 /* DummyData.swift */,
 				32212BEC22F34192008684BA /* DatabaseManager.swift */,
 				32E3FBA82301F03100C73173 /* DocumentsDirectoryManager.swift */,
 				327C8A9923059CB200E45940 /* ApplicationError.swift */,
@@ -324,7 +321,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3215E19C22F0AA940025D232 /* DummyData.swift in Sources */,
 				32E3FBA92301F03100C73173 /* DocumentsDirectoryManager.swift in Sources */,
 				327C8A8C230571A400E45940 /* Category+CoreDataProperties.swift in Sources */,
 				3215E17422EF58920025D232 /* AppDelegate.swift in Sources */,

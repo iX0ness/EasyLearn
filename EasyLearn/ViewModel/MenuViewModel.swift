@@ -26,12 +26,6 @@ struct MenuViewModel {
         return itemViewModel
     }
 
-//    mutating func fetchItems() {
-//
-//        menuItems = DummyData.shared.getMenuItems()
-//
-//    }
-
     mutating func fetchMenuItems() {
         var items: [MenuItem] = []
         ItemName.allCases.forEach { (item) in

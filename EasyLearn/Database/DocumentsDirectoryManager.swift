@@ -18,9 +18,6 @@ enum ItemName: String {
     static let allCases = [contact, exam, library, reading]
 }
 
-
-//extension ItemName: CaseIterable{}
-
 protocol GetPath {
     func getDocumentsURL() -> URL
     func getFullPath(to image: ItemName) -> URL
