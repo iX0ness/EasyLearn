@@ -34,6 +34,7 @@
 		327C8A972305851100E45940 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A952305851100E45940 /* CategoryTableViewCell.swift */; };
 		327C8A982305851100E45940 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327C8A962305851100E45940 /* CategoryTableViewCell.xib */; };
 		327C8A9A23059CB200E45940 /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A9923059CB200E45940 /* ApplicationError.swift */; };
+		327C8AAE2308C55600E45940 /* CategoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8AAD2308C55600E45940 /* CategoryFactory.swift */; };
 		32E3FBA92301F03100C73173 /* DocumentsDirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3FBA82301F03100C73173 /* DocumentsDirectoryManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		327C8A952305851100E45940 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		327C8A962305851100E45940 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
 		327C8A9923059CB200E45940 /* ApplicationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationError.swift; sourceTree = "<group>"; };
+		327C8AAD2308C55600E45940 /* CategoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFactory.swift; sourceTree = "<group>"; };
 		32E3FBA82301F03100C73173 /* DocumentsDirectoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsDirectoryManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +149,7 @@
 				32212BEC22F34192008684BA /* DatabaseManager.swift */,
 				32E3FBA82301F03100C73173 /* DocumentsDirectoryManager.swift */,
 				327C8A9923059CB200E45940 /* ApplicationError.swift */,
+				327C8AAD2308C55600E45940 /* CategoryFactory.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				3215E19622EF740E0025D232 /* MenuViewModel.swift in Sources */,
 				32212BFB22F45091008684BA /* UIConfiguration.swift in Sources */,
 				3215E19322EF6F8E0025D232 /* MenuViewController+Extension.swift in Sources */,
+				327C8AAE2308C55600E45940 /* CategoryFactory.swift in Sources */,
 				327C8A8A230571A400E45940 /* Word+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

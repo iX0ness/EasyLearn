@@ -38,4 +38,10 @@ extension Category {
     @objc(removeWords:)
     @NSManaged public func removeFromWords(_ values: NSSet)
 
+    @objc(setKey:)
+    public func setKey(for words: [Word]) {
+        words.forEach { (word) in
+            word.category = self
+        }
+    }
 }

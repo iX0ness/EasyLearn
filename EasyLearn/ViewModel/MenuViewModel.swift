@@ -28,7 +28,7 @@ struct MenuViewModel {
 
     mutating func fetchMenuItems() {
         var items: [MenuItem] = []
-        ItemName.allCases.forEach { (item) in
+        ItemName.menuItems.forEach { (item) in
             let menuItem = MenuItem(name: item.rawValue,
                                     imagePath:DocumentsManager.shared.getItemImagePath(itemName: item)!
             )

@@ -9,14 +9,54 @@
 import Foundation
 import UIKit
 
+enum Item {
+    enum ItemName: String {
+        case learning = "Learning"
+        case exam = "Exam"
+        case library = "Library"
+        case contact = "Contact"
+
+
+        static let allCases = [learning, exam, library, contact]
+    }
+
+    enum ResourseName: String {
+        case fruits = "Friuts"
+        case apple = "Apple"
+        case melon = "Melon"
+        case potato = "Potato"
+        case tomato = "Tomato"
+
+        static let allCases = [
+            fruits,
+
+            apple, melon,
+            potato, tomato
+        ]
+    }
+
+
+}
+
 enum ItemName: String {
     case learning = "Learning"
     case exam = "Exam"
     case library = "Library"
     case contact = "Contact"
+    case fruits = "Friuts"
+    case apple = "Apple"
+    case melon = "Melon"
+    case potato = "Potato"
+    case tomato = "Tomato"
 
-    static let allCases = [learning, exam, library, contact]
+
+    static let menuItems = [learning, exam, library, contact]
+    static let categoriesAndWords = [fruits,
+                           apple, melon,
+                           potato, tomato]
 }
+
+
 
 protocol GetPath {
     func getDocumentsURL() -> URL
@@ -95,12 +135,13 @@ extension ImageManipulator {
     }
 
     func storeItemsImages() {
-        ItemName.allCases.forEach { (itemName) in
+        ItemName.menuItems.forEach { (itemName) in
+            saveImage(imageName: itemName)
+        }
+        ItemName.categoriesAndWords.forEach { (itemName) in
             saveImage(imageName: itemName)
         }
     }
-
-
 }
 
 class DocumentsManager: ImageManipulator {

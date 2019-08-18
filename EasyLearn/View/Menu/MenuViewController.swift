@@ -7,7 +7,8 @@
 //
 
 import UIKit
-// KGColdCoffee
+import CoreData
+
 class MenuViewController: UIViewController {
 
     @IBOutlet weak var menuCollectionView: UICollectionView!
