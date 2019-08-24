@@ -13,13 +13,15 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var coordinator: Coordinator?
     
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+        let navigationController = UINavigationController()
+        coordinator = MainCoordinator(navigationController: navigationController)
+        coordinator?.start()
         window = UIWindow(frame: UIScreen.main.bounds)
-        let menuViewController = MenuViewController(nibName: "MenuViewController", bundle: nil)
-        let navigationController = UINavigationController(rootViewController: menuViewController)
-        
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         setupUI(application: application)

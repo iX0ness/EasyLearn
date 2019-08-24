@@ -29,6 +29,21 @@ extension MenuViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return CGSize(width: width, height: height)
     }
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            print("0")
+        case 1:
+            print("1")
+        case 2:
+            coordinator?.library()
+        case 3:
+            print("3")
+        default:
+            print("zalupa")
+        }
+    }
+
     func setupCollectionViewUI() {
         self.navigationItem.title = "Home"
         self.navigationController?.navigationBar.prefersLargeTitles = true

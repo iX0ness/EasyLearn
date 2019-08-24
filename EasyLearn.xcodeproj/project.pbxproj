@@ -26,6 +26,7 @@
 		32212BF622F44545008684BA /* KGColdCoffee.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32212BF422F44545008684BA /* KGColdCoffee.ttf */; };
 		32212BF922F44FF1008684BA /* App+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32212BF822F44FF1008684BA /* App+Extension.swift */; };
 		32212BFB22F45091008684BA /* UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32212BFA22F45091008684BA /* UIConfiguration.swift */; };
+		3230FD9D230B348100AC04C7 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3230FD9C230B348100AC04C7 /* MainCoordinator.swift */; };
 		327C8A7C23056CE100E45940 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A7B23056CE100E45940 /* CoreDataStack.swift */; };
 		327C8A89230571A400E45940 /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A85230571A400E45940 /* Word+CoreDataClass.swift */; };
 		327C8A8A230571A400E45940 /* Word+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A86230571A400E45940 /* Word+CoreDataProperties.swift */; };
@@ -35,6 +36,7 @@
 		327C8A982305851100E45940 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327C8A962305851100E45940 /* CategoryTableViewCell.xib */; };
 		327C8A9A23059CB200E45940 /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A9923059CB200E45940 /* ApplicationError.swift */; };
 		327C8AAE2308C55600E45940 /* CategoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8AAD2308C55600E45940 /* CategoryFactory.swift */; };
+		328B3072230EFF6E00C2CE58 /* WordsLibraryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328B3071230EFF6E00C2CE58 /* WordsLibraryCoordinator.swift */; };
 		32E3FBA92301F03100C73173 /* DocumentsDirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3FBA82301F03100C73173 /* DocumentsDirectoryManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,7 @@
 		32212BF422F44545008684BA /* KGColdCoffee.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KGColdCoffee.ttf; sourceTree = "<group>"; };
 		32212BF822F44FF1008684BA /* App+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Extension.swift"; sourceTree = "<group>"; };
 		32212BFA22F45091008684BA /* UIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfiguration.swift; sourceTree = "<group>"; };
+		3230FD9C230B348100AC04C7 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		327C8A7B23056CE100E45940 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		327C8A85230571A400E45940 /* Word+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataClass.swift"; sourceTree = "<group>"; };
 		327C8A86230571A400E45940 /* Word+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 		327C8A962305851100E45940 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
 		327C8A9923059CB200E45940 /* ApplicationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationError.swift; sourceTree = "<group>"; };
 		327C8AAD2308C55600E45940 /* CategoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFactory.swift; sourceTree = "<group>"; };
+		328B3071230EFF6E00C2CE58 /* WordsLibraryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsLibraryCoordinator.swift; sourceTree = "<group>"; };
 		32E3FBA82301F03100C73173 /* DocumentsDirectoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsDirectoryManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +106,7 @@
 		3215E17222EF58920025D232 /* EasyLearn */ = {
 			isa = PBXGroup;
 			children = (
+				3230FD9B230B347100AC04C7 /* Coordinator */,
 				32212BF722F44EF6008684BA /* Application */,
 				3215E17D22EF58940025D232 /* Assets.xcassets */,
 				3215E18B22EF5F6D0025D232 /* Database */,
@@ -209,6 +214,14 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		3230FD9B230B347100AC04C7 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3230FD9C230B348100AC04C7 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		327C8A8D230571B400E45940 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +245,7 @@
 		327C8A932305844C00E45940 /* WordsLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				328B3070230EFF5800C2CE58 /* Coordinator */,
 				320E72CE2309BC2B00212953 /* LibraryViewController.swift */,
 				327C8A94230584D100E45940 /* UIKit */,
 			);
@@ -246,6 +260,14 @@
 				327C8A962305851100E45940 /* CategoryTableViewCell.xib */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		328B3070230EFF5800C2CE58 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				328B3071230EFF6E00C2CE58 /* WordsLibraryCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,7 +350,9 @@
 				327C8A8C230571A400E45940 /* Category+CoreDataProperties.swift in Sources */,
 				3215E17422EF58920025D232 /* AppDelegate.swift in Sources */,
 				327C8A8B230571A400E45940 /* Category+CoreDataClass.swift in Sources */,
+				328B3072230EFF6E00C2CE58 /* WordsLibraryCoordinator.swift in Sources */,
 				320E72D02309BC2B00212953 /* LibraryViewController.swift in Sources */,
+				3230FD9D230B348100AC04C7 /* MainCoordinator.swift in Sources */,
 				32212BED22F34192008684BA /* DatabaseManager.swift in Sources */,
 				32212BF922F44FF1008684BA /* App+Extension.swift in Sources */,
 				3215E19F22F0AC620025D232 /* MenuCollectionViewCell.swift in Sources */,

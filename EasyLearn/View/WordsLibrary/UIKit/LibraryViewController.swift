@@ -9,8 +9,11 @@
 import UIKit
 
 class LibraryViewController: UIViewController {
+
     @IBOutlet weak var libraryTableView: UITableView!
-    
+
+    weak var coordinator: WordsLibraryCoordinator?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

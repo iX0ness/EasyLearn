@@ -13,9 +13,17 @@ class MenuViewController: UIViewController {
 
     @IBOutlet weak var menuCollectionView: UICollectionView!
 
-    var viewModel: MenuViewModel = MenuViewModel()
+    weak var coordinator: MainCoordinator?
+    var viewModel: MenuViewModel
     
+    init(viewModel: MenuViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: "MenuViewController", bundle: nil)
+    }
 
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
