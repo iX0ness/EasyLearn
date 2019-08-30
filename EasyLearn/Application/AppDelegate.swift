@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupUI(application: application)
         
         DocumentsManager.shared.storeItemsImages()
-        //DatabaseManager.shared.storeWords()
+        DatabaseManager.shared.storeWords()
         
         return true
     }

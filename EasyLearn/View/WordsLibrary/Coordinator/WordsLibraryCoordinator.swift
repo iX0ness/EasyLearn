@@ -20,9 +20,13 @@ class WordsLibraryCoordinator: Coordinator {
     }
 
     func start() {
-        let wordsLibraryVC = LibraryViewController()
+        let wordsLibraryVC = LibraryViewController(viewModel: makeViewModel())
         wordsLibraryVC.coordinator = self
         navigationController.pushViewController(wordsLibraryVC, animated: true)
+    }
+
+    private func makeViewModel() -> CategoryListViewModel {
+        return CategoryListViewModel()
     }
 
 

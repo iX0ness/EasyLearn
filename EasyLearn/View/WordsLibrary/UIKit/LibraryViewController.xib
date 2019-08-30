@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LibraryViewController" customModule="EasyLearn" customModuleProvider="target">
             <connections>
-                <outlet property="libraryTableView" destination="V9v-vu-pHM" id="GUP-88-Lwr"/>
+                <outlet property="libraryTableView" destination="V9v-vu-pHM" id="Bn6-Pn-jFZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

@@ -13,16 +13,14 @@ class DatabaseManager: NSObject {
 
     var coreDataStack = CoreDataStack(modelName: "EasyLearn")
 
-
     static let shared = DatabaseManager()
-
-    let fetchCategories: NSFetchRequest<Category> = Category.fetchRequest()
+    private let fetchCategories: NSFetchRequest<Category> = Category.fetchRequest()
 
     private override init() {}
 
     func storeWords() {
         let context = coreDataStack.managedContext
-
+        let fetchCategories: NSFetchRequest<Category> = Category.fetchRequest()
         do {
             let result = try context.count(for: fetchCategories)
             if result == 0 {
@@ -34,8 +32,19 @@ class DatabaseManager: NSObject {
         } catch {
             print(error.localizedDescription)
         }
+    }
 
+    func getCategories(completion: (NSFetchedResultsController<Category>) -> Void) {
+        let context = coreDataStack.managedContext
+        let categoryRequest: NSFetchRequest<Category> = Category.fetchRequest()
+        let sortDescriptor = NSSortDescriptor(key: "topic", ascending: true)
+        categoryRequest.sortDescriptors = [sortDescriptor]
+        let fetchResultsController = NSFetchedResultsController(fetchRequest: categoryRequest,
+                                                                managedObjectContext: context,
+                                                                sectionNameKeyPath: #keyPath(Category.topic),
+                                                                cacheName: nil)
 
+        completion(fetchResultsController)
     }
 
     

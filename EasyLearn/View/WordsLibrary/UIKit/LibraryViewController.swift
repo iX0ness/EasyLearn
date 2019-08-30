@@ -13,9 +13,24 @@ class LibraryViewController: UIViewController {
     @IBOutlet weak var libraryTableView: UITableView!
 
     weak var coordinator: WordsLibraryCoordinator?
+    var viewModel: CategoryListViewModel
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.fetchCategories()
+        libraryTableView.delegate = self
+        libraryTableView.dataSource = self
+        libraryTableView.register(UINib(nibName: "CategoryTableViewCell",
+                                        bundle: nil),
+                                        forCellReuseIdentifier: AppConstants.LibraryView.categoryTableViewCellID)
+    }
 
+    init(viewModel: CategoryListViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }

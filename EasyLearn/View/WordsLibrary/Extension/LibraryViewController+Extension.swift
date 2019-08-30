@@ -9,14 +9,32 @@
 import Foundation
 import UIKit
 
-//extension LibraryViewController: UITableViewDelegate, UITableViewDataSource {
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        <#code#>
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        <#code#>
-//    }
-//
-//
-//}
+extension LibraryViewController: UITableViewDelegate, UITableViewDataSource {
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        if let fetchResController = viewModel.fetchResultsController {
+            return fetchResController.sections!.count
+        }
+        return 0
+    }
+
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let sectionInfo = viewModel.fetchResultsController?.sections?[section]
+        return sectionInfo?.name
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: AppConstants.LibraryView.categoryTableViewCellID, for: indexPath) as? CategoryTableViewCell {
+            
+            return cell
+        }
+
+        return UITableViewCell()
+    }
+
+
+}

@@ -19,7 +19,6 @@ extension Word {
 
     @NSManaged public var english: String?
     @NSManaged public var translation: String?
-    @NSManaged public var imagePath: String?
     @NSManaged public var category: Category?
 
 }

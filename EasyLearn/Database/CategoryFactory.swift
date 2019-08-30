@@ -38,7 +38,6 @@ class CategoryFactory {
             let melon = Word(context: managedObjectContext)
             melon.english = "Melon"
             melon.translation = "Дыня"
-            melon.imagePath = DocumentsManager.shared.getFullPath(to: .melon).path
             melon.category = fruitsCategory
 
             fruitsCategory.addToWords(apple)
