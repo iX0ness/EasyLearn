@@ -17,6 +17,6 @@ class ItemViewModel {
 
     func configure(with item: MenuItem) {
         self.name = item.name
-        self.image = DocumentsManager.shared.getImage(with: item.imagePath)
+        self.image = DocumentsManager.shared.getImage(imageName: item.name!)
     }
 }

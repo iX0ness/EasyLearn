@@ -29,9 +29,8 @@ struct MenuViewModel {
     mutating func fetchMenuItems() {
         var items: [MenuItem] = []
         ItemName.menuItems.forEach { (item) in
-            let menuItem = MenuItem(name: item.rawValue,
-                                    imagePath:DocumentsManager.shared.getItemImagePath(itemName: item)!
-            )
+            var menuItem = MenuItem()
+            menuItem.name = item.rawValue
             items.append(menuItem)
         }
         self.menuItems = items

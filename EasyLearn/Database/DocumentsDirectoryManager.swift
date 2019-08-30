@@ -21,7 +21,7 @@ enum Item {
     }
 
     enum ResourseName: String {
-        case fruits = "Friuts"
+        case fruits = "Fruits"
         case apple = "Apple"
         case melon = "Melon"
         case potato = "Potato"
@@ -43,7 +43,7 @@ enum ItemName: String {
     case exam = "Exam"
     case library = "Library"
     case contact = "Contact"
-    case fruits = "Friuts"
+    case fruits = "Fruits"
     case apple = "Apple"
     case melon = "Melon"
     case potato = "Potato"
@@ -61,6 +61,7 @@ enum ItemName: String {
 protocol GetPath {
     func getDocumentsURL() -> URL
     func getFullPath(to image: ItemName) -> URL
+    func getFullPath(to image: String) -> URL
 }
 
 extension GetPath {
@@ -73,11 +74,18 @@ extension GetPath {
     func getFullPath(to image: ItemName) -> URL {
         return getDocumentsURL().appendingPathComponent(image.rawValue)
     }
+
+    func getFullPath(to image: String) -> URL {
+        return getDocumentsURL().appendingPathComponent(image)
+    }
+
 }
 
 protocol ImageManipulator: GetPath {
     func saveImage(imageName: ItemName) -> Void
     func getImage(imageName: ItemName) -> UIImage?
+    func getImage(imageName: String) -> UIImage?
+
 }
 
 extension ImageManipulator {
@@ -111,9 +119,9 @@ extension ImageManipulator {
         }
     }
 
-    func getImage(with path: String) -> UIImage? {
+    func getImage(imageName: String) -> UIImage? {
         do {
-            let fileURL = URL(fileURLWithPath: path)
+            let fileURL = getFullPath(to: imageName)
             guard FileManager.default.fileExists(atPath: fileURL.path) else {
                 return UIImage(named: "info.png")!
             }
@@ -125,14 +133,7 @@ extension ImageManipulator {
         }
     }
 
-    func getItemImagePath(itemName: ItemName) -> String? {
-        let fileURL = getFullPath(to: itemName)
-        if FileManager.default.fileExists(atPath: fileURL.path) {
-            return fileURL.path
-        } else {
-            return nil
-        }
-    }
+
 
     func storeItemsImages() {
         ItemName.menuItems.forEach { (itemName) in

@@ -18,18 +18,21 @@ class CategoryFactory {
         case vegetables(managedObjectContext: NSManagedObjectContext)
     }
 
+    enum Topic: String {
+        case food = "Food"
+    }
+
     func create(category: CategoryType) {
         switch category {
 
         case .fruits(let managedObjectContext):
             let fruitsCategory = Category(context: managedObjectContext)
             fruitsCategory.name = "Friuts"
-            fruitsCategory.imagePath = DocumentsManager.shared.getFullPath(to: .fruits).path
+            fruitsCategory.topic = Topic.food.rawValue
 
             let apple = Word(context: managedObjectContext)
             apple.english = "Apple"
             apple.translation = "Яблоко"
-            apple.imagePath = DocumentsManager.shared.getFullPath(to: .apple).path
             apple.category = fruitsCategory
 
             let melon = Word(context: managedObjectContext)
@@ -44,18 +47,16 @@ class CategoryFactory {
         case .vegetables(let managedObjectContext):
             let vegetablesCategory = Category(context: managedObjectContext)
             vegetablesCategory.name = "Vegetables"
-            vegetablesCategory.imagePath = DocumentsManager.shared.getFullPath(to: .fruits).path
+            vegetablesCategory.topic = Topic.food.rawValue
 
             let potato = Word(context: managedObjectContext)
             potato.english = "Potato"
             potato.translation = "Картошка"
-            potato.imagePath = DocumentsManager.shared.getFullPath(to: .potato).path
             potato.category = vegetablesCategory
 
             let tomato = Word(context: managedObjectContext)
             tomato.english = "Tomato"
             tomato.translation = "Помидор"
-            tomato.imagePath = DocumentsManager.shared.getFullPath(to: .tomato).path
             tomato.category = vegetablesCategory
 
             vegetablesCategory.addToWords(potato)

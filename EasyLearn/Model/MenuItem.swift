@@ -9,6 +9,5 @@
 import Foundation
 
 struct MenuItem {
-    var name: String
-    var imagePath: String
+    var name: String?
 }
