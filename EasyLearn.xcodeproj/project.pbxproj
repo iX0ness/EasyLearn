@@ -26,6 +26,10 @@
 		32212BF622F44545008684BA /* KGColdCoffee.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32212BF422F44545008684BA /* KGColdCoffee.ttf */; };
 		32212BF922F44FF1008684BA /* App+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32212BF822F44FF1008684BA /* App+Extension.swift */; };
 		32212BFB22F45091008684BA /* UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32212BFA22F45091008684BA /* UIConfiguration.swift */; };
+		3224C40A231C059100BDEC67 /* LibraryViewController+CollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3224C409231C059100BDEC67 /* LibraryViewController+CollectionViewExtension.swift */; };
+		3224C40D231C091400BDEC67 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3224C40B231C091400BDEC67 /* CategoryCollectionViewCell.swift */; };
+		3224C40E231C091400BDEC67 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3224C40C231C091400BDEC67 /* CategoryCollectionViewCell.xib */; };
+		3224C410231C0ECE00BDEC67 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3224C40F231C0ECE00BDEC67 /* CategoryViewModel.swift */; };
 		3230FD9D230B348100AC04C7 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3230FD9C230B348100AC04C7 /* MainCoordinator.swift */; };
 		327C8A7C23056CE100E45940 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A7B23056CE100E45940 /* CoreDataStack.swift */; };
 		327C8A89230571A400E45940 /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A85230571A400E45940 /* Word+CoreDataClass.swift */; };
@@ -38,9 +42,7 @@
 		327C8AAE2308C55600E45940 /* CategoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8AAD2308C55600E45940 /* CategoryFactory.swift */; };
 		328B3072230EFF6E00C2CE58 /* WordsLibraryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328B3071230EFF6E00C2CE58 /* WordsLibraryCoordinator.swift */; };
 		32E3FBA92301F03100C73173 /* DocumentsDirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3FBA82301F03100C73173 /* DocumentsDirectoryManager.swift */; };
-		32F20F7123193A3F00414584 /* CategoryCollectionViewViewCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F20F6F23193A3F00414584 /* CategoryCollectionViewViewCellCollectionViewCell.swift */; };
-		32F20F7223193A3F00414584 /* CategoryCollectionViewViewCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F20F7023193A3F00414584 /* CategoryCollectionViewViewCellCollectionViewCell.xib */; };
-		32F20F7823193ADB00414584 /* LibraryViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F20F7723193ADB00414584 /* LibraryViewController+Extension.swift */; };
+		32F20F7823193ADB00414584 /* LibraryViewController+TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F20F7723193ADB00414584 /* LibraryViewController+TableViewExtension.swift */; };
 		32F20F7A23193B2D00414584 /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F20F7923193B2D00414584 /* CategoryListViewModel.swift */; };
 		32F20F7C2319514100414584 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F20F7B2319514100414584 /* AppConstants.swift */; };
 /* End PBXBuildFile section */
@@ -67,6 +69,10 @@
 		32212BF422F44545008684BA /* KGColdCoffee.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KGColdCoffee.ttf; sourceTree = "<group>"; };
 		32212BF822F44FF1008684BA /* App+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Extension.swift"; sourceTree = "<group>"; };
 		32212BFA22F45091008684BA /* UIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfiguration.swift; sourceTree = "<group>"; };
+		3224C409231C059100BDEC67 /* LibraryViewController+CollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LibraryViewController+CollectionViewExtension.swift"; sourceTree = "<group>"; };
+		3224C40B231C091400BDEC67 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		3224C40C231C091400BDEC67 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		3224C40F231C0ECE00BDEC67 /* CategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		3230FD9C230B348100AC04C7 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		327C8A7B23056CE100E45940 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		327C8A85230571A400E45940 /* Word+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -79,9 +85,7 @@
 		327C8AAD2308C55600E45940 /* CategoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFactory.swift; sourceTree = "<group>"; };
 		328B3071230EFF6E00C2CE58 /* WordsLibraryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsLibraryCoordinator.swift; sourceTree = "<group>"; };
 		32E3FBA82301F03100C73173 /* DocumentsDirectoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsDirectoryManager.swift; sourceTree = "<group>"; };
-		32F20F6F23193A3F00414584 /* CategoryCollectionViewViewCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewViewCellCollectionViewCell.swift; sourceTree = "<group>"; };
-		32F20F7023193A3F00414584 /* CategoryCollectionViewViewCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewViewCellCollectionViewCell.xib; sourceTree = "<group>"; };
-		32F20F7723193ADB00414584 /* LibraryViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LibraryViewController+Extension.swift"; sourceTree = "<group>"; };
+		32F20F7723193ADB00414584 /* LibraryViewController+TableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LibraryViewController+TableViewExtension.swift"; sourceTree = "<group>"; };
 		32F20F7923193B2D00414584 /* CategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewModel.swift; sourceTree = "<group>"; };
 		32F20F7B2319514100414584 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +155,7 @@
 		3215E18A22EF5AC40025D232 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3224C40F231C0ECE00BDEC67 /* CategoryViewModel.swift */,
 				3215E19522EF740E0025D232 /* MenuViewModel.swift */,
 				3215E19922EF7A270025D232 /* ItemViewModel.swift */,
 				32F20F7923193B2D00414584 /* CategoryListViewModel.swift */,
@@ -271,8 +276,8 @@
 				320E72CF2309BC2B00212953 /* LibraryViewController.xib */,
 				327C8A952305851100E45940 /* CategoryTableViewCell.swift */,
 				327C8A962305851100E45940 /* CategoryTableViewCell.xib */,
-				32F20F6F23193A3F00414584 /* CategoryCollectionViewViewCellCollectionViewCell.swift */,
-				32F20F7023193A3F00414584 /* CategoryCollectionViewViewCellCollectionViewCell.xib */,
+				3224C40B231C091400BDEC67 /* CategoryCollectionViewCell.swift */,
+				3224C40C231C091400BDEC67 /* CategoryCollectionViewCell.xib */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -288,7 +293,8 @@
 		32F20F7623193ADB00414584 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				32F20F7723193ADB00414584 /* LibraryViewController+Extension.swift */,
+				32F20F7723193ADB00414584 /* LibraryViewController+TableViewExtension.swift */,
+				3224C409231C059100BDEC67 /* LibraryViewController+CollectionViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -351,13 +357,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32F20F7223193A3F00414584 /* CategoryCollectionViewViewCellCollectionViewCell.xib in Resources */,
 				3215E18122EF58940025D232 /* LaunchScreen.storyboard in Resources */,
 				3215E18F22EF5FA10025D232 /* MenuViewController.xib in Resources */,
 				327C8A982305851100E45940 /* CategoryTableViewCell.xib in Resources */,
 				32212BF622F44545008684BA /* KGColdCoffee.ttf in Resources */,
 				3215E17E22EF58940025D232 /* Assets.xcassets in Resources */,
 				32212BF522F44545008684BA /* KGFonts-TOU.txt in Resources */,
+				3224C40E231C091400BDEC67 /* CategoryCollectionViewCell.xib in Resources */,
 				320E72D12309BC2B00212953 /* LibraryViewController.xib in Resources */,
 				3215E1A022F0AC620025D232 /* MenuCollectionViewCell.xib in Resources */,
 			);
@@ -378,15 +384,17 @@
 				320E72D02309BC2B00212953 /* LibraryViewController.swift in Sources */,
 				3230FD9D230B348100AC04C7 /* MainCoordinator.swift in Sources */,
 				32212BED22F34192008684BA /* DatabaseManager.swift in Sources */,
-				32F20F7123193A3F00414584 /* CategoryCollectionViewViewCellCollectionViewCell.swift in Sources */,
+				3224C40A231C059100BDEC67 /* LibraryViewController+CollectionViewExtension.swift in Sources */,
 				32212BF922F44FF1008684BA /* App+Extension.swift in Sources */,
 				3215E19F22F0AC620025D232 /* MenuCollectionViewCell.swift in Sources */,
 				3215E18E22EF5FA10025D232 /* MenuViewController.swift in Sources */,
+				3224C40D231C091400BDEC67 /* CategoryCollectionViewCell.swift in Sources */,
 				3215E17C22EF58920025D232 /* EasyLearn.xcdatamodeld in Sources */,
 				327C8A7C23056CE100E45940 /* CoreDataStack.swift in Sources */,
 				327C8A9A23059CB200E45940 /* ApplicationError.swift in Sources */,
 				3215E19A22EF7A270025D232 /* ItemViewModel.swift in Sources */,
 				3215E19822EF74420025D232 /* MenuItem.swift in Sources */,
+				3224C410231C0ECE00BDEC67 /* CategoryViewModel.swift in Sources */,
 				327C8A89230571A400E45940 /* Word+CoreDataClass.swift in Sources */,
 				327C8A972305851100E45940 /* CategoryTableViewCell.swift in Sources */,
 				32F20F7C2319514100414584 /* AppConstants.swift in Sources */,
@@ -394,7 +402,7 @@
 				32F20F7A23193B2D00414584 /* CategoryListViewModel.swift in Sources */,
 				32212BFB22F45091008684BA /* UIConfiguration.swift in Sources */,
 				3215E19322EF6F8E0025D232 /* MenuViewController+Extension.swift in Sources */,
-				32F20F7823193ADB00414584 /* LibraryViewController+Extension.swift in Sources */,
+				32F20F7823193ADB00414584 /* LibraryViewController+TableViewExtension.swift in Sources */,
 				327C8AAE2308C55600E45940 /* CategoryFactory.swift in Sources */,
 				327C8A8A230571A400E45940 /* Word+CoreDataProperties.swift in Sources */,
 			);

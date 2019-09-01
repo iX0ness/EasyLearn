@@ -23,13 +23,18 @@ extension LibraryViewController: UITableViewDelegate, UITableViewDataSource {
         return sectionInfo?.name
     }
 
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 180
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: AppConstants.LibraryView.categoryTableViewCellID, for: indexPath) as? CategoryTableViewCell {
-            
+            cell.categoryCollectionView.delegate = self
+            cell.categoryCollectionView.dataSource = self
             return cell
         }
 

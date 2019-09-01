@@ -25,4 +25,11 @@ class CategoryListViewModel {
             }
         }
     }
+
+    func makeViewModel(for indexPath: IndexPath) -> CategoryViewModel {
+        let categoryViewModel = CategoryViewModel()
+        categoryViewModel.name = fetchResultsController?.fetchedObjects![indexPath.row].name
+        categoryViewModel.image = DocumentsManager.shared.getImage(imageName: categoryViewModel.name!)
+        return categoryViewModel
+    }
 }

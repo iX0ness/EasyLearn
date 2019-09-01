@@ -44,6 +44,7 @@ enum ItemName: String {
     case library = "Library"
     case contact = "Contact"
     case fruits = "Fruits"
+    case vegetables = "Vegetables"
     case apple = "Apple"
     case melon = "Melon"
     case potato = "Potato"
@@ -51,7 +52,7 @@ enum ItemName: String {
 
 
     static let menuItems = [learning, exam, library, contact]
-    static let categoriesAndWords = [fruits,
+    static let categoriesAndWords = [fruits, vegetables,
                            apple, melon,
                            potato, tomato]
 }

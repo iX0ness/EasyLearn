@@ -27,7 +27,7 @@ class CategoryFactory {
 
         case .fruits(let managedObjectContext):
             let fruitsCategory = Category(context: managedObjectContext)
-            fruitsCategory.name = "Friuts"
+            fruitsCategory.name = "Fruits"
             fruitsCategory.topic = Topic.food.rawValue
 
             let apple = Word(context: managedObjectContext)

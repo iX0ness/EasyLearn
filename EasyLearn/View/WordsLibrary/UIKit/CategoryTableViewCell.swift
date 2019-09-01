@@ -11,8 +11,9 @@ import UIKit
 class CategoryTableViewCell: UITableViewCell {
 
     @IBOutlet weak var categoryCollectionView: UICollectionView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        categoryCollectionView.register(UINib(nibName: AppConstants.LibraryView.categoryCollectionViewCellNib, bundle: nil), forCellWithReuseIdentifier: AppConstants.LibraryView.categoryCollectionViewCellID)
     }
 }

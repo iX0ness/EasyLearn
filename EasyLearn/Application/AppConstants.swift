@@ -11,6 +11,9 @@ import Foundation
 struct AppConstants {
 
     struct LibraryView {
+        static let categoryTableViewCellNib = "CategoryTableViewCell"
         static let categoryTableViewCellID = "categoryTableViewCell"
+        static let categoryCollectionViewCellNib = "CategoryCollectionViewCell"
+        static let categoryCollectionViewCellID = "categoryCollectionViewCell"
     }
 }
