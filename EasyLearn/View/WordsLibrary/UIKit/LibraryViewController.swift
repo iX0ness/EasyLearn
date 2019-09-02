@@ -12,7 +12,7 @@ class LibraryViewController: UIViewController {
 
     @IBOutlet weak var libraryTableView: UITableView!
 
-    weak var coordinator: WordsLibraryCoordinator?
+    var coordinator: WordsLibraryCoordinator?
     var viewModel: CategoryListViewModel
 
     override func viewDidLoad() {

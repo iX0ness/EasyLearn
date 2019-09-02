@@ -33,6 +33,9 @@
 		3224C415231C277A00BDEC67 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3224C413231C277A00BDEC67 /* WordsTableViewController.swift */; };
 		3224C416231C277A00BDEC67 /* WordsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3224C414231C277A00BDEC67 /* WordsTableViewController.xib */; };
 		3224C41A231C28E600BDEC67 /* WordListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3224C419231C28E600BDEC67 /* WordListViewModel.swift */; };
+		3224C41C231D7AD000BDEC67 /* WordsTableViewController+TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3224C41B231D7AD000BDEC67 /* WordsTableViewController+TableViewExtension.swift */; };
+		3224C41F231D885D00BDEC67 /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3224C41D231D885D00BDEC67 /* WordTableViewCell.swift */; };
+		3224C420231D885D00BDEC67 /* WordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3224C41E231D885D00BDEC67 /* WordTableViewCell.xib */; };
 		3230FD9D230B348100AC04C7 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3230FD9C230B348100AC04C7 /* MainCoordinator.swift */; };
 		327C8A7C23056CE100E45940 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A7B23056CE100E45940 /* CoreDataStack.swift */; };
 		327C8A89230571A400E45940 /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A85230571A400E45940 /* Word+CoreDataClass.swift */; };
@@ -79,6 +82,9 @@
 		3224C413231C277A00BDEC67 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		3224C414231C277A00BDEC67 /* WordsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordsTableViewController.xib; sourceTree = "<group>"; };
 		3224C419231C28E600BDEC67 /* WordListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewModel.swift; sourceTree = "<group>"; };
+		3224C41B231D7AD000BDEC67 /* WordsTableViewController+TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordsTableViewController+TableViewExtension.swift"; sourceTree = "<group>"; };
+		3224C41D231D885D00BDEC67 /* WordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
+		3224C41E231D885D00BDEC67 /* WordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordTableViewCell.xib; sourceTree = "<group>"; };
 		3230FD9C230B348100AC04C7 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		327C8A7B23056CE100E45940 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		327C8A85230571A400E45940 /* Word+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -252,6 +258,9 @@
 			isa = PBXGroup;
 			children = (
 				3224C414231C277A00BDEC67 /* WordsTableViewController.xib */,
+				3224C41B231D7AD000BDEC67 /* WordsTableViewController+TableViewExtension.swift */,
+				3224C41D231D885D00BDEC67 /* WordTableViewCell.swift */,
+				3224C41E231D885D00BDEC67 /* WordTableViewCell.xib */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -259,6 +268,7 @@
 		3230FD9B230B347100AC04C7 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				328B3070230EFF5800C2CE58 /* Coordinator */,
 				3230FD9C230B348100AC04C7 /* MainCoordinator.swift */,
 			);
 			path = Coordinator;
@@ -287,7 +297,6 @@
 		327C8A932305844C00E45940 /* WordsLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				328B3070230EFF5800C2CE58 /* Coordinator */,
 				320E72CE2309BC2B00212953 /* LibraryViewController.swift */,
 				32F20F7623193ADB00414584 /* Extension */,
 				327C8A94230584D100E45940 /* UIKit */,
@@ -385,6 +394,7 @@
 				3215E18122EF58940025D232 /* LaunchScreen.storyboard in Resources */,
 				3215E18F22EF5FA10025D232 /* MenuViewController.xib in Resources */,
 				327C8A982305851100E45940 /* CategoryTableViewCell.xib in Resources */,
+				3224C420231D885D00BDEC67 /* WordTableViewCell.xib in Resources */,
 				3224C416231C277A00BDEC67 /* WordsTableViewController.xib in Resources */,
 				32212BF622F44545008684BA /* KGColdCoffee.ttf in Resources */,
 				3215E17E22EF58940025D232 /* Assets.xcassets in Resources */,
@@ -415,6 +425,7 @@
 				3215E19F22F0AC620025D232 /* MenuCollectionViewCell.swift in Sources */,
 				3215E18E22EF5FA10025D232 /* MenuViewController.swift in Sources */,
 				3224C40D231C091400BDEC67 /* CategoryCollectionViewCell.swift in Sources */,
+				3224C41C231D7AD000BDEC67 /* WordsTableViewController+TableViewExtension.swift in Sources */,
 				3215E17C22EF58920025D232 /* EasyLearn.xcdatamodeld in Sources */,
 				327C8A7C23056CE100E45940 /* CoreDataStack.swift in Sources */,
 				327C8A9A23059CB200E45940 /* ApplicationError.swift in Sources */,
@@ -423,6 +434,7 @@
 				3215E19822EF74420025D232 /* MenuItem.swift in Sources */,
 				3224C410231C0ECE00BDEC67 /* CategoryViewModel.swift in Sources */,
 				327C8A89230571A400E45940 /* Word+CoreDataClass.swift in Sources */,
+				3224C41F231D885D00BDEC67 /* WordTableViewCell.swift in Sources */,
 				327C8A972305851100E45940 /* CategoryTableViewCell.swift in Sources */,
 				32F20F7C2319514100414584 /* AppConstants.swift in Sources */,
 				3215E19622EF740E0025D232 /* MenuViewModel.swift in Sources */,

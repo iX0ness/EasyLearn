@@ -16,4 +16,9 @@ struct AppConstants {
         static let categoryCollectionViewCellNib = "CategoryCollectionViewCell"
         static let categoryCollectionViewCellID = "categoryCollectionViewCell"
     }
+
+    struct WordListView {
+        static let wordTableViewCellNib = "WordTableViewCell"
+        static let wordTableViewCellID = "wordTableViewCellID"
+    }
 }

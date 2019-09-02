@@ -32,4 +32,12 @@ class CategoryListViewModel {
         categoryViewModel.image = DocumentsManager.shared.getImage(imageName: categoryViewModel.name!)
         return categoryViewModel
     }
+
+    func makeWordsListViewModel(for indexPath: IndexPath) -> WordListViewModel {
+        let category = fetchResultsController?.object(at: indexPath)
+        let words = category?.words?.allObjects as? [Word]
+        var wordListViewModel = WordListViewModel()
+        wordListViewModel.words = words!
+        return wordListViewModel
+    }
 }

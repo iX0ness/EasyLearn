@@ -24,6 +24,11 @@ extension LibraryViewController: UICollectionViewDelegate, UICollectionViewDataS
         return cell!
     }
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let wordsList = viewModel.makeWordsListViewModel(for: indexPath)
+        coordinator?.words(wordsListViewModel: wordsList)
+    }
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 160, height: 160)
     }
