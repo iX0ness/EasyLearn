@@ -29,5 +29,11 @@ class WordsLibraryCoordinator: Coordinator {
         return CategoryListViewModel()
     }
 
+    func words() {
+        let wordsListVC = WordsTableViewController()
+        wordsListVC.coordinator = self
+        navigationController.pushViewController(wordsListVC, animated: true)
+    }
+
 
 }

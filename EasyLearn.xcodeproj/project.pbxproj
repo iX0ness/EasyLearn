@@ -30,6 +30,9 @@
 		3224C40D231C091400BDEC67 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3224C40B231C091400BDEC67 /* CategoryCollectionViewCell.swift */; };
 		3224C40E231C091400BDEC67 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3224C40C231C091400BDEC67 /* CategoryCollectionViewCell.xib */; };
 		3224C410231C0ECE00BDEC67 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3224C40F231C0ECE00BDEC67 /* CategoryViewModel.swift */; };
+		3224C415231C277A00BDEC67 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3224C413231C277A00BDEC67 /* WordsTableViewController.swift */; };
+		3224C416231C277A00BDEC67 /* WordsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3224C414231C277A00BDEC67 /* WordsTableViewController.xib */; };
+		3224C41A231C28E600BDEC67 /* WordListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3224C419231C28E600BDEC67 /* WordListViewModel.swift */; };
 		3230FD9D230B348100AC04C7 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3230FD9C230B348100AC04C7 /* MainCoordinator.swift */; };
 		327C8A7C23056CE100E45940 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A7B23056CE100E45940 /* CoreDataStack.swift */; };
 		327C8A89230571A400E45940 /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A85230571A400E45940 /* Word+CoreDataClass.swift */; };
@@ -73,6 +76,9 @@
 		3224C40B231C091400BDEC67 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		3224C40C231C091400BDEC67 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		3224C40F231C0ECE00BDEC67 /* CategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		3224C413231C277A00BDEC67 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
+		3224C414231C277A00BDEC67 /* WordsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordsTableViewController.xib; sourceTree = "<group>"; };
+		3224C419231C28E600BDEC67 /* WordListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewModel.swift; sourceTree = "<group>"; };
 		3230FD9C230B348100AC04C7 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		327C8A7B23056CE100E45940 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		327C8A85230571A400E45940 /* Word+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -146,6 +152,7 @@
 		3215E18922EF5AC00025D232 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3224C412231C274500BDEC67 /* WordsList */,
 				327C8A932305844C00E45940 /* WordsLibrary */,
 				3215E19022EF5FA80025D232 /* Menu */,
 			);
@@ -159,6 +166,7 @@
 				3215E19522EF740E0025D232 /* MenuViewModel.swift */,
 				3215E19922EF7A270025D232 /* ItemViewModel.swift */,
 				32F20F7923193B2D00414584 /* CategoryListViewModel.swift */,
+				3224C419231C28E600BDEC67 /* WordListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -229,6 +237,23 @@
 				32F20F7B2319514100414584 /* AppConstants.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		3224C412231C274500BDEC67 /* WordsList */ = {
+			isa = PBXGroup;
+			children = (
+				3224C417231C278000BDEC67 /* UIKit */,
+				3224C413231C277A00BDEC67 /* WordsTableViewController.swift */,
+			);
+			path = WordsList;
+			sourceTree = "<group>";
+		};
+		3224C417231C278000BDEC67 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				3224C414231C277A00BDEC67 /* WordsTableViewController.xib */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		3230FD9B230B347100AC04C7 /* Coordinator */ = {
@@ -360,6 +385,7 @@
 				3215E18122EF58940025D232 /* LaunchScreen.storyboard in Resources */,
 				3215E18F22EF5FA10025D232 /* MenuViewController.xib in Resources */,
 				327C8A982305851100E45940 /* CategoryTableViewCell.xib in Resources */,
+				3224C416231C277A00BDEC67 /* WordsTableViewController.xib in Resources */,
 				32212BF622F44545008684BA /* KGColdCoffee.ttf in Resources */,
 				3215E17E22EF58940025D232 /* Assets.xcassets in Resources */,
 				32212BF522F44545008684BA /* KGFonts-TOU.txt in Resources */,
@@ -393,12 +419,14 @@
 				327C8A7C23056CE100E45940 /* CoreDataStack.swift in Sources */,
 				327C8A9A23059CB200E45940 /* ApplicationError.swift in Sources */,
 				3215E19A22EF7A270025D232 /* ItemViewModel.swift in Sources */,
+				3224C41A231C28E600BDEC67 /* WordListViewModel.swift in Sources */,
 				3215E19822EF74420025D232 /* MenuItem.swift in Sources */,
 				3224C410231C0ECE00BDEC67 /* CategoryViewModel.swift in Sources */,
 				327C8A89230571A400E45940 /* Word+CoreDataClass.swift in Sources */,
 				327C8A972305851100E45940 /* CategoryTableViewCell.swift in Sources */,
 				32F20F7C2319514100414584 /* AppConstants.swift in Sources */,
 				3215E19622EF740E0025D232 /* MenuViewModel.swift in Sources */,
+				3224C415231C277A00BDEC67 /* WordsTableViewController.swift in Sources */,
 				32F20F7A23193B2D00414584 /* CategoryListViewModel.swift in Sources */,
 				32212BFB22F45091008684BA /* UIConfiguration.swift in Sources */,
 				3215E19322EF6F8E0025D232 /* MenuViewController+Extension.swift in Sources */,
