@@ -13,23 +13,22 @@ extension WordsTableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
         return viewModel.words.isEmpty ? 0 : viewModel.words.count
     }
 
     
-     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     let cell = tableView.dequeueReusableCell(withIdentifier: AppConstants.WordListView.wordTableViewCellID, for: indexPath) as? WordTableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: AppConstants.WordListView.wordTableViewCellID, for: indexPath) as? WordTableViewCell else {
+            return UITableViewCell()
+        }
 
-        
-
-     return cell!
-     }
+        cell.wordLabel.text = viewModel.words[indexPath.row].english
+        return cell
+    }
 
 
     /*

@@ -16,6 +16,7 @@ class WordsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: AppConstants.WordListView.wordTableViewCellNib, bundle: nil), forCellReuseIdentifier: AppConstants.WordListView.wordTableViewCellID)
+        addBarButtonItem()
         
     }
 

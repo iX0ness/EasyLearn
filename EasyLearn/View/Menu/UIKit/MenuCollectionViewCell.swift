@@ -16,6 +16,7 @@ class MenuCollectionViewCell: UICollectionViewCell, Colorable {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.backgroundColor = setColor(color: .copper)
+        self.itemTitle.textColor = setColor(color: .tamarind)
     }
 
     func configure(with viewModel: ItemViewModel) {

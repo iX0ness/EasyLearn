@@ -19,15 +19,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ug9-Ha-S22">
-                        <rect key="frame" x="5" y="1" width="310" height="41.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ug9-Ha-S22">
+                        <rect key="frame" x="15" y="1" width="300" height="41.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ug9-Ha-S22" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="c8A-xP-ywk"/>
+                    <constraint firstItem="ug9-Ha-S22" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="c8A-xP-ywk"/>
                     <constraint firstAttribute="trailing" secondItem="ug9-Ha-S22" secondAttribute="trailing" constant="5" id="cbD-X6-ObV"/>
                     <constraint firstItem="ug9-Ha-S22" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="q7g-MM-Lj3"/>
                     <constraint firstAttribute="bottom" secondItem="ug9-Ha-S22" secondAttribute="bottom" constant="1" id="vk8-pR-HRl"/>

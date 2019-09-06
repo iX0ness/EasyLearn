@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		320E72D02309BC2B00212953 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320E72CE2309BC2B00212953 /* LibraryViewController.swift */; };
 		320E72D12309BC2B00212953 /* LibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 320E72CF2309BC2B00212953 /* LibraryViewController.xib */; };
+		3212D6922322D3A000C8ED1C /* WordsTableViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3212D6912322D3A000C8ED1C /* WordsTableViewController+NavigationBar.swift */; };
 		3215E17422EF58920025D232 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215E17322EF58920025D232 /* AppDelegate.swift */; };
 		3215E17C22EF58920025D232 /* EasyLearn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3215E17A22EF58920025D232 /* EasyLearn.xcdatamodeld */; };
 		3215E17E22EF58940025D232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3215E17D22EF58940025D232 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 /* Begin PBXFileReference section */
 		320E72CE2309BC2B00212953 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LibraryViewController.swift; path = UIKit/LibraryViewController.swift; sourceTree = "<group>"; };
 		320E72CF2309BC2B00212953 /* LibraryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryViewController.xib; sourceTree = "<group>"; };
+		3212D6912322D3A000C8ED1C /* WordsTableViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordsTableViewController+NavigationBar.swift"; sourceTree = "<group>"; };
 		3215E17022EF58920025D232 /* EasyLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3215E17322EF58920025D232 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3215E17B22EF58920025D232 /* EasyLearn.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EasyLearn.xcdatamodel; sourceTree = "<group>"; };
@@ -113,6 +115,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3212D6902322D35100C8ED1C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3224C41B231D7AD000BDEC67 /* WordsTableViewController+TableViewExtension.swift */,
+				3212D6912322D3A000C8ED1C /* WordsTableViewController+NavigationBar.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3212D6932322E45100C8ED1C /* AddWords */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddWords;
+			sourceTree = "<group>";
+		};
 		3215E16722EF58910025D232 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +176,7 @@
 		3215E18922EF5AC00025D232 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3212D6932322E45100C8ED1C /* AddWords */,
 				3224C412231C274500BDEC67 /* WordsList */,
 				327C8A932305844C00E45940 /* WordsLibrary */,
 				3215E19022EF5FA80025D232 /* Menu */,
@@ -248,6 +267,7 @@
 		3224C412231C274500BDEC67 /* WordsList */ = {
 			isa = PBXGroup;
 			children = (
+				3212D6902322D35100C8ED1C /* Extension */,
 				3224C417231C278000BDEC67 /* UIKit */,
 				3224C413231C277A00BDEC67 /* WordsTableViewController.swift */,
 			);
@@ -258,7 +278,6 @@
 			isa = PBXGroup;
 			children = (
 				3224C414231C277A00BDEC67 /* WordsTableViewController.xib */,
-				3224C41B231D7AD000BDEC67 /* WordsTableViewController+TableViewExtension.swift */,
 				3224C41D231D885D00BDEC67 /* WordTableViewCell.swift */,
 				3224C41E231D885D00BDEC67 /* WordTableViewCell.xib */,
 			);
@@ -419,6 +438,7 @@
 				328B3072230EFF6E00C2CE58 /* WordsLibraryCoordinator.swift in Sources */,
 				320E72D02309BC2B00212953 /* LibraryViewController.swift in Sources */,
 				3230FD9D230B348100AC04C7 /* MainCoordinator.swift in Sources */,
+				3212D6922322D3A000C8ED1C /* WordsTableViewController+NavigationBar.swift in Sources */,
 				32212BED22F34192008684BA /* DatabaseManager.swift in Sources */,
 				3224C40A231C059100BDEC67 /* LibraryViewController+CollectionViewExtension.swift in Sources */,
 				32212BF922F44FF1008684BA /* App+Extension.swift in Sources */,

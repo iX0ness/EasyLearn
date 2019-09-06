@@ -35,6 +35,10 @@ class WordsLibraryCoordinator: Coordinator {
         navigationController.pushViewController(wordsListVC, animated: true)
     }
 
+    @objc func addWords() {
+        print("add")
+    }
+
 
 }
 

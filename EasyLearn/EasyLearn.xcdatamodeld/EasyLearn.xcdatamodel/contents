@@ -6,8 +6,8 @@
         <relationship name="words" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Word" inverseName="category" inverseEntity="Word" syncable="YES"/>
     </entity>
     <entity name="Word" representedClassName="Word" syncable="YES">
-        <attribute name="english" attributeType="String" syncable="YES"/>
-        <attribute name="translation" attributeType="String" syncable="YES"/>
+        <attribute name="english" attributeType="String" minValueString="2" syncable="YES"/>
+        <attribute name="translation" attributeType="String" minValueString="2" syncable="YES"/>
         <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="words" inverseEntity="Category" syncable="YES"/>
     </entity>
     <elements>
