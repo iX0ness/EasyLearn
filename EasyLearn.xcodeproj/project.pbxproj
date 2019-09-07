@@ -38,6 +38,8 @@
 		3224C41F231D885D00BDEC67 /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3224C41D231D885D00BDEC67 /* WordTableViewCell.swift */; };
 		3224C420231D885D00BDEC67 /* WordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3224C41E231D885D00BDEC67 /* WordTableViewCell.xib */; };
 		3230FD9D230B348100AC04C7 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3230FD9C230B348100AC04C7 /* MainCoordinator.swift */; };
+		3272BFBB2323B66900627E94 /* AddWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272BFB92323B66900627E94 /* AddWordViewController.swift */; };
+		3272BFBC2323B66900627E94 /* AddWordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3272BFBA2323B66900627E94 /* AddWordViewController.xib */; };
 		327C8A7C23056CE100E45940 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A7B23056CE100E45940 /* CoreDataStack.swift */; };
 		327C8A89230571A400E45940 /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A85230571A400E45940 /* Word+CoreDataClass.swift */; };
 		327C8A8A230571A400E45940 /* Word+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A86230571A400E45940 /* Word+CoreDataProperties.swift */; };
@@ -88,6 +90,8 @@
 		3224C41D231D885D00BDEC67 /* WordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
 		3224C41E231D885D00BDEC67 /* WordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordTableViewCell.xib; sourceTree = "<group>"; };
 		3230FD9C230B348100AC04C7 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		3272BFB92323B66900627E94 /* AddWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordViewController.swift; sourceTree = "<group>"; };
+		3272BFBA2323B66900627E94 /* AddWordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddWordViewController.xib; sourceTree = "<group>"; };
 		327C8A7B23056CE100E45940 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		327C8A85230571A400E45940 /* Word+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataClass.swift"; sourceTree = "<group>"; };
 		327C8A86230571A400E45940 /* Word+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -127,6 +131,9 @@
 		3212D6932322E45100C8ED1C /* AddWords */ = {
 			isa = PBXGroup;
 			children = (
+				3272BFBE2323B67D00627E94 /* UIKit */,
+				3272BFBD2323B67700627E94 /* Extension */,
+				3272BFB92323B66900627E94 /* AddWordViewController.swift */,
 			);
 			path = AddWords;
 			sourceTree = "<group>";
@@ -293,6 +300,21 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		3272BFBD2323B67700627E94 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3272BFBE2323B67D00627E94 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				3272BFBA2323B66900627E94 /* AddWordViewController.xib */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		327C8A8D230571B400E45940 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -416,6 +438,7 @@
 				3224C420231D885D00BDEC67 /* WordTableViewCell.xib in Resources */,
 				3224C416231C277A00BDEC67 /* WordsTableViewController.xib in Resources */,
 				32212BF622F44545008684BA /* KGColdCoffee.ttf in Resources */,
+				3272BFBC2323B66900627E94 /* AddWordViewController.xib in Resources */,
 				3215E17E22EF58940025D232 /* Assets.xcassets in Resources */,
 				32212BF522F44545008684BA /* KGFonts-TOU.txt in Resources */,
 				3224C40E231C091400BDEC67 /* CategoryCollectionViewCell.xib in Resources */,
@@ -461,6 +484,7 @@
 				3224C415231C277A00BDEC67 /* WordsTableViewController.swift in Sources */,
 				32F20F7A23193B2D00414584 /* CategoryListViewModel.swift in Sources */,
 				32212BFB22F45091008684BA /* UIConfiguration.swift in Sources */,
+				3272BFBB2323B66900627E94 /* AddWordViewController.swift in Sources */,
 				3215E19322EF6F8E0025D232 /* MenuViewController+Extension.swift in Sources */,
 				32F20F7823193ADB00414584 /* LibraryViewController+TableViewExtension.swift in Sources */,
 				327C8AAE2308C55600E45940 /* CategoryFactory.swift in Sources */,

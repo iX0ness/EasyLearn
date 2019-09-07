@@ -36,7 +36,9 @@ class WordsLibraryCoordinator: Coordinator {
     }
 
     @objc func addWords() {
-        print("add")
+        let addWordVC = AddWordViewController()
+        addWordVC.coordinator = self
+        navigationController.pushViewController(addWordVC, animated: true)
     }
 
 
