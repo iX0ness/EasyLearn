@@ -37,7 +37,8 @@ class CategoryListViewModel {
         let category = fetchResultsController?.object(at: indexPath)
         let words = category?.words?.allObjects as? [Word]
         var wordListViewModel = WordListViewModel()
-        wordListViewModel.words = words!
+        wordListViewModel.category = category
+        wordListViewModel.words = words ?? []
         return wordListViewModel
     }
 }

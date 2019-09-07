@@ -9,6 +9,7 @@
 import Foundation
 
 struct WordListViewModel {
+    var category: Category?
     var words: [Word] = []
 
 }

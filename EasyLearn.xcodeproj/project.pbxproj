@@ -40,6 +40,7 @@
 		3230FD9D230B348100AC04C7 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3230FD9C230B348100AC04C7 /* MainCoordinator.swift */; };
 		3272BFBB2323B66900627E94 /* AddWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272BFB92323B66900627E94 /* AddWordViewController.swift */; };
 		3272BFBC2323B66900627E94 /* AddWordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3272BFBA2323B66900627E94 /* AddWordViewController.xib */; };
+		3272BFC02323CE1300627E94 /* AddWordViewController+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272BFBF2323CE1300627E94 /* AddWordViewController+TextField.swift */; };
 		327C8A7C23056CE100E45940 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A7B23056CE100E45940 /* CoreDataStack.swift */; };
 		327C8A89230571A400E45940 /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A85230571A400E45940 /* Word+CoreDataClass.swift */; };
 		327C8A8A230571A400E45940 /* Word+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C8A86230571A400E45940 /* Word+CoreDataProperties.swift */; };
@@ -92,6 +93,7 @@
 		3230FD9C230B348100AC04C7 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		3272BFB92323B66900627E94 /* AddWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordViewController.swift; sourceTree = "<group>"; };
 		3272BFBA2323B66900627E94 /* AddWordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddWordViewController.xib; sourceTree = "<group>"; };
+		3272BFBF2323CE1300627E94 /* AddWordViewController+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddWordViewController+TextField.swift"; sourceTree = "<group>"; };
 		327C8A7B23056CE100E45940 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		327C8A85230571A400E45940 /* Word+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataClass.swift"; sourceTree = "<group>"; };
 		327C8A86230571A400E45940 /* Word+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -303,6 +305,7 @@
 		3272BFBD2323B67700627E94 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				3272BFBF2323CE1300627E94 /* AddWordViewController+TextField.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				32212BFB22F45091008684BA /* UIConfiguration.swift in Sources */,
 				3272BFBB2323B66900627E94 /* AddWordViewController.swift in Sources */,
 				3215E19322EF6F8E0025D232 /* MenuViewController+Extension.swift in Sources */,
+				3272BFC02323CE1300627E94 /* AddWordViewController+TextField.swift in Sources */,
 				32F20F7823193ADB00414584 /* LibraryViewController+TableViewExtension.swift in Sources */,
 				327C8AAE2308C55600E45940 /* CategoryFactory.swift in Sources */,
 				327C8A8A230571A400E45940 /* Word+CoreDataProperties.swift in Sources */,

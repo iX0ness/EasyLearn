@@ -12,9 +12,12 @@ class AddWordViewController: UIViewController {
 
     var coordinator: WordsLibraryCoordinator?
 
+    @IBOutlet weak var englishWordTextField: UITextField!
+    @IBOutlet weak var translationTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        englishWordTextField.delegate = self
+        translationTextField.delegate = self
        
     }
 
