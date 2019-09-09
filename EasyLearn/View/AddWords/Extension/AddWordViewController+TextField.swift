@@ -11,4 +11,13 @@ import UIKit
 
 extension AddWordViewController: UITextFieldDelegate {
     
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        guard textField == self.translationTextField && self.englishWordTextField.text == "" else {return true }
+        return false
+    }
+
+    override func becomeFirstResponder() -> Bool {
+        englishWordTextField.becomeFirstResponder()
+        return true
+    }
 }

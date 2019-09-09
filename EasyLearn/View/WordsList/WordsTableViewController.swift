@@ -8,15 +8,17 @@
 
 import UIKit
 
-class WordsTableViewController: UITableViewController {
+class WordsTableViewController: UITableViewController, AddWordViewControllerDelegate {
 
-    weak var coordinator: WordsLibraryCoordinator?
+    var coordinator: WordsLibraryCoordinator?
     var viewModel: WordListViewModel
+    var addWordViewController: AddWordViewController?
+    
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UINib(nibName: AppConstants.WordListView.wordTableViewCellNib, bundle: nil), forCellReuseIdentifier: AppConstants.WordListView.wordTableViewCellID)
-        
+        tableView.register(UINib(nibName: AppConstants.WordListView.wordTableViewCellNib, bundle: nil),                                 forCellReuseIdentifier: AppConstants.WordListView.wordTableViewCellID)
+
         setupNavigationItem()
     }
 
@@ -30,5 +32,8 @@ class WordsTableViewController: UITableViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    
+    func didFinishAddWord(_ word: NewWord) {
+        print(word)
+    }
+
 }

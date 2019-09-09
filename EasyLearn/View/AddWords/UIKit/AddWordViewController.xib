@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddWordViewController" customModule="EasyLearn" customModuleProvider="target">
             <connections>
+                <outlet property="addWordButton" destination="EqW-Vu-nEo" id="FEA-YM-pk8"/>
                 <outlet property="englishWordTextField" destination="jvk-1f-R5O" id="ZFk-S0-1bT"/>
                 <outlet property="translationTextField" destination="9Ta-Eo-vQy" id="grZ-Z9-AS3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -40,6 +41,17 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EqW-Vu-nEo">
+                    <rect key="frame" x="157" y="364" width="100" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Z5j-WU-aH4"/>
+                        <constraint firstAttribute="width" constant="100" id="uVg-QW-bLM"/>
+                    </constraints>
+                    <state key="normal" title="Add word"/>
+                    <connections>
+                        <action selector="addWord:" destination="-1" eventType="touchUpInside" id="Wei-8m-vcf"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -49,6 +61,8 @@
                 <constraint firstItem="jvk-1f-R5O" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="KCt-GE-fT2"/>
                 <constraint firstItem="jvk-1f-R5O" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="120" id="Lik-fj-e8B"/>
                 <constraint firstItem="9Ta-Eo-vQy" firstAttribute="top" secondItem="jvk-1f-R5O" secondAttribute="bottom" constant="20" id="TUu-15-xuw"/>
+                <constraint firstItem="EqW-Vu-nEo" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="VSW-1T-qqW"/>
+                <constraint firstItem="EqW-Vu-nEo" firstAttribute="top" secondItem="9Ta-Eo-vQy" secondAttribute="bottom" constant="100" id="hdp-Rh-tpk"/>
                 <constraint firstItem="9Ta-Eo-vQy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="jO7-sT-vt1"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

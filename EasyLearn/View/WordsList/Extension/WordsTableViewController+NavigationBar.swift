@@ -14,7 +14,9 @@ extension WordsTableViewController {
 
     func setupNavigationItem() {
         func addBarButtonItem() {
-            let addBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: coordinator, action: #selector(coordinator?.addWords))
+//            let addBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: coordinator, action: #selector(coordinator?.addWords))
+
+            let addBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addWord))
             self.navigationItem.setRightBarButton(addBarButtonItem, animated: false)
         }
 
@@ -26,6 +28,10 @@ extension WordsTableViewController {
 
         addBarButtonItem()
         setTitle()
+    }
+
+    @objc func addWord() {
+        coordinator?.addWords(parentVC: self)
     }
 
 

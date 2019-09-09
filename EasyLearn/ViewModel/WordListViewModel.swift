@@ -12,4 +12,13 @@ struct WordListViewModel {
     var category: Category?
     var words: [Word] = []
 
+
+    func addToWords(_ newWord: NewWord) {
+        let context = DatabaseManager.shared.coreDataStack.managedContext
+        let word = Word(context: context)
+        word.english = newWord.english
+        word.translation = newWord.translation
+        category?.addToWords(word)
+    }
+
 }

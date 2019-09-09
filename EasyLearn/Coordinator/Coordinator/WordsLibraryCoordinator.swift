@@ -35,10 +35,15 @@ class WordsLibraryCoordinator: Coordinator {
         navigationController.pushViewController(wordsListVC, animated: true)
     }
 
-    @objc func addWords() {
-        let addWordVC = AddWordViewController()
-        addWordVC.coordinator = self
-        navigationController.pushViewController(addWordVC, animated: true)
+    func addWords(parentVC: WordsTableViewController) {
+        parentVC.addWordViewController = AddWordViewController()
+        parentVC.addWordViewController?.delegate = parentVC
+        parentVC.addWordViewController?.coordinator = self
+        navigationController.pushViewController(parentVC.addWordViewController!, animated: true)
+    }
+
+    func pop() {
+        navigationController.popViewController(animated: true)
     }
 
 
