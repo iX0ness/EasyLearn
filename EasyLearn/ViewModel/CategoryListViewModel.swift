@@ -36,7 +36,7 @@ class CategoryListViewModel {
     func makeWordsListViewModel(for indexPath: IndexPath) -> WordListViewModel {
         let category = fetchResultsController?.object(at: indexPath)
         let words = category?.words?.allObjects as? [Word]
-        var wordListViewModel = WordListViewModel()
+        let wordListViewModel = WordListViewModel()
         wordListViewModel.category = category
         wordListViewModel.words = words ?? []
         return wordListViewModel

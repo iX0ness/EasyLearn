@@ -33,7 +33,7 @@ class WordsTableViewController: UITableViewController, AddWordViewControllerDele
     }
 
     func didFinishAddWord(_ word: NewWord) {
-        print(word)
+        viewModel.addToWords(word)
     }
 
 }

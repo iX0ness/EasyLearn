@@ -9,35 +9,6 @@
 import Foundation
 import UIKit
 
-enum Item {
-    enum ItemName: String {
-        case learning = "Learning"
-        case exam = "Exam"
-        case library = "Library"
-        case contact = "Contact"
-
-
-        static let allCases = [learning, exam, library, contact]
-    }
-
-    enum ResourseName: String {
-        case fruits = "Fruits"
-        case apple = "Apple"
-        case melon = "Melon"
-        case potato = "Potato"
-        case tomato = "Tomato"
-
-        static let allCases = [
-            fruits,
-
-            apple, melon,
-            potato, tomato
-        ]
-    }
-
-
-}
-
 enum ItemName: String {
     case learning = "Learning"
     case exam = "Exam"
