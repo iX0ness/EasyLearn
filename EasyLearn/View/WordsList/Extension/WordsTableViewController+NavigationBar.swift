@@ -14,15 +14,12 @@ extension WordsTableViewController {
 
     func setupNavigationItem() {
         func addBarButtonItem() {
-//            let addBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: coordinator, action: #selector(coordinator?.addWords))
-
             let addBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addWord))
             self.navigationItem.setRightBarButton(addBarButtonItem, animated: false)
         }
 
         func setTitle() {
             guard let categoryName = viewModel.category?.name else {return}
-
             self.navigationItem.title = categoryName
         }
 

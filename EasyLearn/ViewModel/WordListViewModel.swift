@@ -25,7 +25,7 @@ class WordListViewModel {
     }
 
     func delete(word at: IndexPath) {
-
+        
     }
 
 }
